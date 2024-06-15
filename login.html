@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form class="form" onsubmit="return validateData()">
+        <div>
+            <label for="username">Username
+                <input type="text" id="username" name="username" placeholder="" required>
+            </label>
+            <br>
+            <label for="email">Email
+                <input type="email" id="email" name="email" placeholder="" required>
+            </label>
+            <br>
+            <label for="password">Password
+                <input type="password" id="password" name="password" required>
+            </label>
+            <br>
+            <label for="confpassword">Confirm Password
+                <input type="password" id="confpassword" name="confpassword" required>
+            </label>
+            <br>
+            <label for="age">Age
+                <input type="number" id="age" name="age" required>
+            </label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <label for="range">Range
+                <input type="range" min="0" max="5" id="range" name="range">
+            </label>
+            <br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="" hidden>select a country</option>
+                <option value="indo">Indo</option>
+                <option value="malay">Malay</option>
+                <option value="sing">Sing</option>
+                <option value="thai">Thai</option>
+            </select>
+            <br>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+            <br>
+            <label for="term">
+                <input type="checkbox" id="term" name="term" required>
+                I agree to the terms and conditions
+            </label>
+            <br>
+        </div>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+<script src="login.js"></script>
+</html>
